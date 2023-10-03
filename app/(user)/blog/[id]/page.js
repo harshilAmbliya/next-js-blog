@@ -17,7 +17,7 @@ const Home = ({ params }) => {
     const handleDelete = async () => {
         try {
 
-            const res = await axios.delete("http://localhost:3000/api/blog/delete", {
+            const res = await axios.delete("/api/blog/delete", {
                 data: {
                     blog
                 }
@@ -93,7 +93,7 @@ const Home = ({ params }) => {
                         </div>
                     </div>
                    
-                    {blog.image && <img src={blog.image} className='w-full h-[40vh] rounded-lg object-cover bg-no-repeat' />}
+                    {blog.image && <img src={blog?.image ? blog.image : '/no-image.png'} className='w-full h-[40vh] rounded-lg object-cover bg-no-repeat' />}
                     <div className="flex items-center justify-between py-5">
                         <h1 className='text-2xl py-7'>{blog?.title}</h1>
                         {/* <Button className="my-3" >{blog.slug}</Button> */}

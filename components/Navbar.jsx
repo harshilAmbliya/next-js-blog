@@ -35,7 +35,7 @@ const Navbar = () => {
   return (
     <div className="navbar  flex justify-between items-center h-[6rem] border-b px-6">
       <div className="flex">
-        <Link href={'/'} className="normal-case text-xl">BlogMANIA</Link>
+        <Link href={'/'} className="normal-case text-xl">Blogger</Link>
       </div>
       <div className="flex items-center justify-center space-x-5 text-lg pl-20">
         <Link href={'/'} className={` ${path === "/" ? ' ' : ''}`}>Home</Link>

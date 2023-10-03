@@ -24,7 +24,7 @@ const Sidebar = () => {
     <>
       <div className=" py-5 border-e relative ">
         <div className="px-3">
-          <h3 className="text-lg text-center py-4">Choose Youe Paths</h3>
+          {/* <h3 className="text-lg text-center py-4">Choose Youe Paths</h3> */}
           <ul className="flex items-center justify-center flex-col">
             <Link
               href={"/dashboard"}
